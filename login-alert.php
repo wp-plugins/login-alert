@@ -3,7 +3,7 @@
 Plugin Name: Login Alert
 Plugin URI: http://www.pasqualepuzio.it
 Description: 
-Version: 0.2
+Version: 0.2.1
 Author: PasqualePuzio
 Author URI: http://www.pasqualepuzio.it
 */
@@ -68,7 +68,7 @@ PLACEHOLDERS AVAILABLE FOR BODY: %USERNAME%, %DATE%, %TIME%
 <li><input type="submit" value="Save" /></li>
 </ul>
 <input type="hidden" name="action" value="yes" />
-<?php settings_fields( 'login-alert_options' ); ?>
+<?php //settings_fields( 'login-alert_options' ); ?>
 </form>
 <?php }
 
