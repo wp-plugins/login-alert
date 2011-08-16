@@ -14,14 +14,17 @@ function init_settings() {
 	$exclude_admin = get_option('login-alert_exclude_admin');
 
 	if (!$subject) {
+		register_setting('login-alert_options', 'login-alert_subject', 'esc_attr');
 		add_option('login-alert_subject', 'New login at %SITENAME%');
 	}
 
 	if (!$body) {
+		register_setting('login-alert_options', 'login-alert_body', 'esc_attr');
 		add_option('login-alert_body', '%USERNAME% logged in at %DATE% %TIME%');
 	}
 
 	if (!$exclude_admin) {
+		register_setting('login-alert_options', 'login-alert_exclude_admin', 'esc_attr');
 		add_option('login-alert_exclude_admin', 0);
 	}
 
@@ -65,6 +68,7 @@ PLACEHOLDERS AVAILABLE FOR BODY: %USERNAME%, %DATE%, %TIME%
 <li><input type="submit" value="Save" /></li>
 </ul>
 <input type="hidden" name="action" value="yes" />
+<?php settings_fields( 'login-alert_options' ); ?>
 </form>
 <?php }
 
