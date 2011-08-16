@@ -3,7 +3,7 @@
 Plugin Name: Login Alert
 Plugin URI: http://www.pasqualepuzio.it
 Description: 
-Version: 0.1
+Version: 0.2
 Author: PasqualePuzio
 Author URI: http://www.pasqualepuzio.it
 */
