@@ -1,6 +1,6 @@
 === Login Alert ===
 Contributors: PasqualePuzio
-Tags: login, security, alert, email, send
+Tags: login, notification, notify, security, alert, email, send
 Requires at least: 3.0
 Tested up to: 3.2.1
 Stable tag: 0.2.1
